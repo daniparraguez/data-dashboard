@@ -707,6 +707,7 @@ var data = {
         },
         {
           'name': 'Henrieta Osman',
+
           'photo': 'http://dummyimage.com/146x182.png/dddddd/000000',
           'active': true,
           'sprints': [
