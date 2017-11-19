@@ -6,7 +6,7 @@
 // de la variable `data`
 //console.log(data);
 
-(var alumnasScl2016_2 = function(){
+(function (){
    var container = document.getElementById('scl2016-2');
    var students = data.SCL["2016-2"].students;
 

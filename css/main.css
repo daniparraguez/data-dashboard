@@ -19,7 +19,6 @@ header {
  
 .wrapper {
 	padding: 1.5em 2em ;
-
 	overflow:hidden; /* Eliminamos errores de float */
 }
  
