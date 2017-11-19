@@ -1,3 +1,125 @@
 /*
  * Estilos de tu proyecto
  */
+header {
+	width:100%;
+	height: 200px; /* Establecemos que el header abarque el 100% del documento */
+	overflow:hidden; /* Eliminamos errores de float */
+	background:#919191;
+	margin-bottom:20px;
+}
+ 
+.wrapper {
+	width:90%; /* Establecemos que el ancho sera del 90% */
+	max-width:1000px; /* Aqui le decimos que el ancho máximo sera de 1000px */
+	margin:auto; /* Centramos los elementos */
+	overflow:hidden; /* Eliminamos errores de float */
+}
+ 
+header .logo {
+	color:grey;
+	font-size:40px;
+	line-height:50px;
+	float:left;
+}
+
+
+header nav {
+	float:right;
+	line-height:200px;
+}
+
+header nav a {
+	display:inline-block;
+	color:#252932;
+	text-decoration:none;
+	padding:10px 20px;
+	line-height:normal;
+	font-size:20px;
+	font-weight:bold;
+	-webkit-transition:all 500ms ease;
+	-o-transition:all 500ms ease;
+	transition:all 500ms ease;
+}
+ 
+header nav a:hover {
+	background:#ffc107;
+	border-radius:50px;
+}
+
+#nav,#nav ul {
+
+    background-color: #8899AA;
+    list-style: none outside none;
+    margin: 0;
+    padding: 0;
+}
+
+#nav {
+    display: block;
+    padding: 5px;
+    position: relative;
+    width: 112px;
+    -moz-perspective: 200px;
+    -ms-perspective: 200px;
+    -webkit-perspective: 200px;
+    -o-perspective: 200px;
+    perspective: 200px;
+}
+
+#nav ul {
+
+    left: -9999px;
+    opacity:0;
+    overflow: hidden;
+    padding: 5px;
+    position: absolute;
+    top: -9999px;
+}
+
+#nav li {
+
+    background-color: #ffc107;
+    position: relative;
+}
+
+#nav > li {
+
+    -moz-transform-style: preserve-3d;
+    -ms-transform-style: preserve-3d;
+    -o-transform-style: preserve-3d;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+
+}
+
+#nav li a {
+    
+    border-color: #252932 #555555 #555555 #DDDDDD;
+    border-style: solid;
+    border-width: 1px;
+    color: #000000;
+    display: block;
+    font-size: 15px;
+    padding: 23px 17px 12px 4px;
+    text-decoration: none;
+    width:95px;
+}
+
+#nav li:hover > a {
+    background-color: #919191;
+    border-color: #000;
+    color: #FFFFFF;
+}
+
+#nav li:hover ul.subs {
+    left: 114px;
+    opacity:1;
+    top: 0;
+}
+
+#nav ul li {
+
+    width: 100%;
+
+}

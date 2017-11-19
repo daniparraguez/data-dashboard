@@ -1,46 +1,79 @@
-<html>
-  <head>
-    <!--Load the AJAX API-->
-    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
-    <script type="text/javascript">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Dashboard</title>
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="js/app.js">
+  
+</head>
 
-      // Load the Visualization API and the corechart package.
-      google.charts.load('current', {'packages':['corechart']});
 
-      // Set a callback to run when the Google Visualization API is loaded.
-      google.charts.setOnLoadCallback(dibujar);
+<header>
+    <div class="wrapper">
+      <div class="logo">Dashboard
+      <img src="assets/images/logo-laboratoria.svg" alt="imagenlab">
+      </div>
+      
+      <nav>
+        <a href="#">Mexico</a>
+        <a href="#">Arequipa</a>
+        <a href="#">Lima</a>
+        <a href="#">Chile</a>
+      </nav>
+    </div>
+</header>
+ <body> 
+<div class="container">
 
-      // Callback that creates and populates a data table,
-      // instantiates the pie chart, passes in the data and
-      // draws it.
-      function dibujar() {
+    <ul id="nav">
 
-        // Create the data table.
-        var data = new google.visualization.DataTable();
-        data.addColumn('string', 'Topping');
-        data.addColumn('number', 'Slices');
-        data.addRows([
-          ['alumnas', 3],
-          ['promedios', 1],
-          ['activas', 1],
-          ['datos', 1],
-          ['Pepperoni', 2]
-        ]);
+        <li><a href="https://www.ponerlinkHome.com/">Home</a></li>
 
-        // Set chart options
-        var options = {'title':'estadisticas laboratoria',
-                       'width':400,
-                       'height':300};
+        <li><a href="#">Menu 1</a>
 
-        // Instantiate and draw our chart, passing in some options.
-        var chart = new google.visualization.PieChart(document.getElementById('chart'));
-        chart.draw(data, options);
-      }
-    </script>
-  </head>
+            <ul class="subs">
+                <li><a href="#">Submenu 1</a></li>
+                <li><a href="#">Submenu 2</a></li>
+                <li><a href="#">Submenu 3</a></li>
+                <li><a href="#">Submenu 4</a></li>
+                <li><a href="#">Submenu 5</a></li>
+            </ul>
+        </li>
 
-  <body>
-    <!--Div that will hold the pie chart-->
-    <div id="chart"></div>
-  </body>
+        <li><a href="#">Menu 2</a>
+
+            <ul class="subs">
+                <li><a href="#">Submenu 2-1</a></li>
+                <li><a href="#">Submenu 2-2</a></li>
+                <li><a href="#">Submenu 2-3</a></li>
+                <li><a href="#">Submenu 2-4</a></li>
+                <li><a href="#">Submenu 2-5</a></li>
+                <li><a href="#">Submenu 2-6</a></li>
+                <li><a href="#">Submenu 2-7</a></li>
+                <li><a href="#">Submenu 2-8</a></li>
+            </ul>
+        </li>
+
+        <li><a href="#">Menu 3</a>
+            <ul class="subs">
+                <li><a href="#">Submenu 3-1</a></li>
+                <li><a href="#">Submenu 3-2</a></li>
+                <li><a href="#">Submenu 3-3</a></li>
+                <li><a href="#">Submenu 3-4</a></li>
+                <li><a href="#">Submenu 3-5</a></li>
+            </ul>
+        </li>
+
+        <li><a href="#">Menu 4</a></li>
+
+        <li><a href="#">Menu 5</a></li>
+
+        <li><a href="#">Menu 6</a></li>
+
+        <li><a href="https://www.script-tutorials.com/css3-vertical-multicolor-3d-menu/">Back</a></li>
+
+    </ul>
+</div>
+</body>
 </html>
