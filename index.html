@@ -7,35 +7,30 @@
   <link href="https://fonts.googleapis.com/css?family=Raleway:400,700,900&amp;subset=latin-ext" rel="stylesheet">
 </head>
 
- <body> 
-<header>
-    <div class="wrapper">
-      
+<body>
+    <header>
+    <div class="wrapper">      
       <img src="assets/images/logo-laboratoria.svg" alt="imagenlab">
-      
-      
+           
       <nav>
-        <a href="#">Mexico</a>
-        <a href="#">Arequipa</a>
-        <a href="#">Lima</a>
-        <a href="#">Chile</a>
+        <a href="#">Overview</a>
+        <a href="#">Students</a>
+        <a href="#">Teachers</a>
+        
       </nav>
     </div>
-</header>
+    </header>
 
-
-
+<section class="first">
     <ul id="nav">
-
-        <li><a href="https://www.ponerlinkHome.com/">Dashboard</a></li>
 
         <li><a href="#">SANTIAGO</a>
 
             <ul class="subs">
                 <li><a href="#">Generación 2014</a></li>
                 <li><a href="#">Generación 2015</a></li>
-                <li><a href="javascript:;" id="scl2016-2" onclick="scl2016_2()">Generación 2016</a></li>
-                <li><a href="#">Generación 2017</a></li>
+                <li><a href="#sclgen2016">Generación 2016</a></li>
+                <li><a href="#sclgen2017">Generación 2017</a></li>
             </ul>
         </li>
 
@@ -44,7 +39,7 @@
             <ul class="subs">
                 <li><a href="#">Generación 2014</a></li>
                 <li><a href="#">Generación 2015</a></li>
-                <li><a href="#">Generación 2016</a></li>
+                <li><a href="#" id=aqp2016 >Generación 2016</a></li>
                 <li><a href="#">Generación 2017</a></li>
             </ul>
         </li>
@@ -68,12 +63,74 @@
 
         </li>
 
-        <li><a href="https://www.script-tutorials.com/css3-vertical-multicolor-3d-menu/">Back</a></li>
-
     </ul>
+</section>
+   <section class="overview">
+     
+    <div class="total">
+    <div>
+     
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+
+     // Load the Visualization API and the corechart package.
+      google.charts.load('current', {'packages':['corechart']});
+
+     // Set a callback to run when the Google Visualization API is loaded.
+      google.charts.setOnLoadCallback(dibujar);
+
+     // Callback that creates and populates a data table,
+      // instantiates the pie chart, passes in the data and
+      // draws it.
+      function dibujar() {
+
+       // Create the data table.
+        var data = new google.visualization.DataTable();
+        data.addColumn('string', 'Topping');
+        data.addColumn('number', 'Slices');
+        data.addRows([
+          ['México', 60],
+          ['Lima', 31],
+          ['Santiago', 54],
+          ['Arequipa', 15],
+          
+        ]);
+
+       // Set chart options
+        var options = {'title':'ALUMNAS TOTALES POR SEDE',
+                       'width':300,
+                       'height':300,
+                       'backgroundColor': 'transparent'};
 
 
-<div id="scl2016-1"></div>
+       // Instantiate and draw our chart, passing in some options.
+        var chart = new google.visualization.PieChart(document.getElementById('chart'));
+        chart.draw(data, options);
+      }
+    </script>
+          <div id="chart"></div>
+    </div>
+
+
+    
+    </div>
+
+  </section>
+
+  <section class="scl" >
+  <div id=sclgen2016>
+      <h1>Generación 2016</h1>
+  </div>
+    
+  </section>
+
+  <section class="aqp" >
+  <div id=aqpgen2016>
+      <h1>Generación 2016</h1>
+  </div>
+    
+  </section>
+<!--<div class="alumnas" id="scl2016-2"></div>-->
 <!--<div id="scl2016-2"></div>-->
 
  <!-- Base de datos -->

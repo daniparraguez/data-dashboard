@@ -1,25 +1,26 @@
 /*
  * Estilos de tu proyecto
  */
-/*
- * Estilos de tu proyecto
- */
+header {
+	width:100%;/* Establecemos que el header abarque el 100% del documento */
+	height: 6em; 
+	background:#919191;
+	margin-bottom:20px;
+	position: fixed;
+	z-index: +1;
+}
+
 body{
 	margin:0;
 	font-family: Raleway;
 }
-header {
-	width:100%;/* Establecemos que el header abarque el 100% del documento */
-	height: 6em; 
-	overflow:hidden; /* Eliminamos errores de float */
-	background:#919191;
-	margin-bottom:20px;
-
-}
- 
 .wrapper {
 	padding: 1.5em 2em ;
-	overflow:hidden; /* Eliminamos errores de float */
+	
+}
+.first{
+	padding-top: 7em;
+	margin-bottom: 7em;
 }
  
 header img {
@@ -32,7 +33,6 @@ header nav {
 	float:right;
 	
 }
-
 header nav a {
 	display:inline-block;
 	color:#252932;
@@ -111,12 +111,18 @@ header nav a:hover {
 
 }
 
-.alumnas{
-	width: 5em;
-	height: 3em;
-	background-color: grey;
+.overview{
+	width: 30em;
+	height: 17em;
+	background-color: #E6E6E6;
 	position: relative;
-	left: 15em;
-	bottom: 25em;
+	left: 17em;
+	bottom: 15em;
 
 }
+ .scl, .aqp{
+ 	width: 30em;
+	height: 25em;
+	padding-bottom: 3em;
+	background-color: #E6E6E6;
+ }
