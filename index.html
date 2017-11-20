@@ -25,7 +25,6 @@
     <ul id="nav">
 
         <li><a href="#">SANTIAGO</a>
-
             <ul class="subs">
                 <li><a href="#">Generación 2014</a></li>
                 <li><a href="#">Generación 2015</a></li>
@@ -68,8 +67,8 @@
    <section class="overview">
      
     <div class="total">
+    <h1>TOTAL ENROLLMENT 2017</h1>
     <div>
-     
     <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
     <script type="text/javascript">
 
@@ -97,12 +96,14 @@
         ]);
 
        // Set chart options
-        var options = {'title':'ALUMNAS TOTALES POR SEDE',
-                       'width':300,
-                       'height':300,
-                       'backgroundColor': 'transparent'};
+        var options = {title:'ALUMNAS TOTALES POR SEDE',
+                       width:500,
+                       height:350,
+                       backgroundColor: 'transparent',
+                       colors: ['#138D75', '#0B5345', '#45B39D', '#A2D9CE'],
+                       is3D: true,
 
-
+                   };
        // Instantiate and draw our chart, passing in some options.
         var chart = new google.visualization.PieChart(document.getElementById('chart'));
         chart.draw(data, options);
@@ -110,9 +111,6 @@
     </script>
           <div id="chart"></div>
     </div>
-
-
-    
     </div>
 
   </section>
