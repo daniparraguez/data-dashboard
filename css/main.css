@@ -113,13 +113,17 @@ header nav a:hover {
 
 .overview{
 	width: 30em;
-	height: 17em;
+	height: 22em;
 	background-color: #E6E6E6;
 	position: relative;
 	left: 17em;
-	bottom: 15em;
-
+	bottom: 22em;
 }
+.total h1{
+	padding: 1em 2em 0em;
+	margin: 0;
+}
+
  .scl, .aqp{
  	width: 30em;
 	height: 25em;
