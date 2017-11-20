@@ -125,8 +125,24 @@ header nav a:hover {
 }
 
  .scl, .aqp{
- 	width: 30em;
-	height: 25em;
+ 	width: 25em;
+	height: 20em;
 	padding-bottom: 3em;
 	background-color: #E6E6E6;
+	display: inline-block;
+	margin-left: 2em;
  }
+ h1 {
+    padding-top: 10px;
+    padding-left: 22px;
+}
+
+.boxito {
+    background-color: white;
+    width: 130px;
+    height: 70px;
+    margin-left: 5px;
+    padding-left: 23px;
+    display: inline-block;
+    
+}
