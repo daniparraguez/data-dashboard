@@ -155,8 +155,15 @@
   </section>
   <a class="overbtn" href="#">Back to Overview</a>
 <div id="move1"></div>
-  <section  class="scl" style="margin-top: 200px;"
- >
+  <section  class="scl" style="margin-top: 200px;">
+
+<form name="link"><select name="menu">
+<option selected="selected">Elige una sección</option>
+<option value="http://tuenlace.com">SCL 1 - AM</option>
+<option value="http://tuenlace.com">SCL 1 - PM</option>
+<option value="http://tuenlace.com">SCL 2 - AM</option>
+</select>  <input onclick="location=document.link.menu.options[document.link.menu.selectedIndex].value;" type="button" value="Ir" /><span style="line-height: 1.3em;"> </span></form>
+
   <div >
       <h1>Enrollment</h1>
       <div id="box"><h5  id=sclgen20171>Student Currently
