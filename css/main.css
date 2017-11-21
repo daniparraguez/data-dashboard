@@ -3,7 +3,7 @@
  */
 header {
 	width:100%;/* Establecemos que el header abarque el 100% del documento */
-	height: 6em; 
+	height: 7em; 
 	background:#919191;
 	margin-bottom:20px;
 	position: fixed;
@@ -44,6 +44,7 @@ header nav a {
 	-webkit-transition:all 500ms ease;
 	-o-transition:all 500ms ease;
 	transition:all 500ms ease;
+
 }
  
 header nav a:hover {
@@ -56,13 +57,11 @@ header nav a:hover {
     list-style: none;
     margin: 0;
     padding: 0;
-
 }
 
 #nav {
     display: inline-block;
     position: relative;
-    width: 127px;
  }
 
 #nav ul {
@@ -70,10 +69,10 @@ header nav a:hover {
     left: -9999px;
     opacity:0;
     overflow: hidden;
-    padding: 13px;
+    padding: 0px;
     position: absolute;
     top: -9999px;
-
+ 
 }
 
 #nav li {
@@ -83,15 +82,13 @@ header nav a:hover {
 }
 
 #nav li a {
-    
-    border-style: solid;
-    border-width: 1px;
+   
     color: #000000;
     display: block;
     font-size: 15px;
     padding: 35px 15px 12px 10px;
     text-decoration: none;
-    width:100px;
+    width:130px;
 }
 
 #nav li:hover > a {
@@ -101,9 +98,10 @@ header nav a:hover {
 }
 
 #nav li:hover ul.subs {
-    left: 114px;
+    left: 155px;
     opacity:1;
     top: 0;
+
 }
 
 #nav ul li {
@@ -112,12 +110,22 @@ header nav a:hover {
 }
 
 .overview{
-	width: 30em;
+	width: 28em;
 	height: 22em;
 	background-color: #E6E6E6;
 	position: relative;
-	left: 17em;
+	left: 20em;
 	bottom: 22em;
+	
+
+}
+.dessert{
+	width: 28em;
+	height: 22em;
+	background-color: #E6E6E6;
+	position: relative;
+	left: 31em;
+	bottom: 25em;
 }
 .total h1{
 	padding: 1em 2em 0em;
@@ -129,16 +137,34 @@ header nav a:hover {
 	height: 20em;
 	padding-bottom: 3em;
 	background-color: #E6E6E6;
-	display: inline-block;
-	margin-left: 2em;
+    display: inline-block;
  }
- h1 {
+
+h1 {
     padding-top: 10px;
     padding-left: 22px;
 }
 
-.boxito {
-    background-color: white;
+#box {
+    background-color: #Fff;
+    width: 130px;
+    height: 70px;
+    margin-left: 5px;
+    padding-left: 23px;
+    display: inline-block;
+    
+}
+
+.boxes, .satisfaction{
+ 	width: 25em;
+	height: 20em;
+	padding-bottom: 3em;
+	background-color: #E6E6E6;
+   
+ }
+
+#small {
+    background-color: #Fff;
     width: 130px;
     height: 70px;
     margin-left: 5px;

@@ -5,6 +5,7 @@
   <title>Dashboard</title>
   <link rel="stylesheet" href="css/main.css">
   <link href="https://fonts.googleapis.com/css?family=Raleway:400,700,900&amp;subset=latin-ext" rel="stylesheet">
+  <script src="https://use.fontawesome.com/7b33261934.js"></script>
 </head>
 
 <body>
@@ -24,40 +25,41 @@
 <section class="first">
     <ul id="nav">
 
-        <li><a href="#">SANTIAGO</a>
+        <li><a href="#"><strong>SANTIAGO</strong></a>
             <ul class="subs">
-                <li><a href="#sclgen2017">Generación 2017</a></li>
+                <li><a href="#sclgen20171">Generación 2017</a></li>
                 <li><a href="#sclgen2016">Generación 2016</a></li>
                 <li><a href="#">Generación 2015</a></li>
                 <li><a href="#">Generación 2014</a></li>
+                
             </ul>
         </li>
 
-        <li><a href="#">AREQUIPA</a>
+        <li><a href="#"><strong>AREQUIPA</strong></a>
 
             <ul class="subs">
-                <li><a href="#">Generación 2017</a></li>
-                <li><a href="#">Generación 2016</a></li>
-                <li><a href="#" id=aqp2016 >Generación 2015</a></li>
                 <li><a href="#">Generación 2014</a></li>
-            </ul>
-        </li>
-
-        <li><a href="#">LIMA</a>
-            <ul class="subs">
-                <li><a href="#">Generación 2017</a></li>
-                <li><a href="#">Generación 2016</a></li>
                 <li><a href="#">Generación 2015</a></li>
-                <li><a href="#">Generación 2014</a></li>
+                <li><a href="#" id=aqp2016 >Generación 2016</a></li>
+                <li><a href="#">Generación 2017</a></li>
             </ul>
         </li>
 
-        <li><a href="#">MÉXICO</a>
+        <li><a href="#"><strong>LIMA</strong></a>
             <ul class="subs">
-                <li><a href="#">Generación 2017</a></li>
-                <li><a href="#">Generación 2016</a></li>
-                <li><a href="#">Generación 2015</a></li>
                 <li><a href="#">Generación 2014</a></li>
+                <li><a href="#">Generación 2015</a></li>
+                <li><a href="#">Generación 2016</a></li>
+                <li><a href="#">Generación 2017</a></li>
+            </ul>
+        </li>
+
+        <li><a href="#"><strong>MÉXICO</strong></a>
+            <ul class="subs">
+                <li><a href="#">Generación 2014</a></li>
+                <li><a href="#">Generación 2015</a></li>
+                <li><a href="#">Generación 2016</a></li>
+                <li><a href="#">Generación 2017</a></li>
             </ul>
 
         </li>
@@ -68,7 +70,7 @@
      
     <div class="total">
     <h1>TOTAL ENROLLMENT 2017</h1>
-    <div>
+    </div>
     <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
     <script type="text/javascript">
 
@@ -112,53 +114,136 @@
           <div id="chart"></div>
     </div>
     </div>
+    <section class="dessert">
+     
+    <div class="total">
+    <h1>TOTAL DESSERTION 2017</h1>
+    </div>
+     <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+
+     google.charts.load("current", {packages:["corechart"]});
+      google.charts.setOnLoadCallback(dibujar);
+        function dibujar() {
+
+       // Create the data table.
+        var data = new google.visualization.DataTable();
+        data.addColumn('string', 'Topping');
+        data.addColumn('number', 'Slices');
+        data.addRows([
+          ['México', 40],
+          ['Lima', 13],
+          ['Santiago', 42],
+          ['Arequipa', 7],
+          
+        ]);
+         var options = {title:'ALUMNAS TOTALES POR SEDE',
+                       width:500,
+                       height:350,
+                       backgroundColor: 'transparent',
+                       colors: ['#138D75', '#0B5345', '#45B39D', '#A2D9CE'],
+                       is3D: true,
+
+                   };
+
+        var chart = new google.visualization.PieChart(document.getElementById('donutchart'));
+        chart.draw(data, options);
+      }
+      </script>
+      <div id="donutchart" ></div>
 
   </section>
 
-  <h1 id=sclgen2016>Generación 2016-2</h1>
   <section class="scl" >
- 
   <div >
       <h1>Enrollment</h1>
-      <div class="boxito" ><h6 id="sclgen20162">Student Currently
+      <div id="box"><h6  id=sclgen20171>Student Currently
     Enrolled
     </h6></div>
-    <div class="boxito"><h6>
+    <div id="box"><h6 id="sclgen20172dessert">
     Dropout
     </h6></div>
-
- </div>
+      <nav>
+        <a href="#">Overview</a>
+        
+        
+      </nav>
+  </div>
     
- </section>
-
- <section class="aqp" >
-  <div id=aqpgen2016>
-      <h1>Achievement</h1>
-      <div class="boxito"><h6>Student that
-      Meet The Target
-    </h6></div>
-    <div class="boxito"><h6>% of total (135)
-    </h6></div>
-
- </div>
-    
- </section>
+  </section>
 
   <section class="aqp" >
   <div id=aqpgen2016>
-  <h1>Net Prometer Score</h1>
-  <div class="boxito"><h6> % acumulative NPS
+      <h1>Achievement</h1>
+      <div id="box"><h6>Student that
+      Meet The Target
     </h6></div>
-    <div class="boxito"><h6>
-    % Promoters
-    % Passive
-    % Detractors
+    <div id="box"><h6>% of total (135)
     </h6></div>
 
-     
- </div>
+  </div>
     
- </section>
+  </section>
+
+   <section class="aqp" >
+   <div id=aqpgen2016>
+     <h1>Net Prometer Score</h1>
+    <div id="box">
+     <h6> % acumulative NPS </h6>
+    </div>
+    <div id="box">
+     <h6>
+     % Promoters
+     % Passive
+     % Detractors 
+     </h6>
+    </div>
+
+    </div>
+    
+  </section>
+
+  <section class="boxes" >
+   <div id="satisfaction">
+   <h1>Student Satisfaction</h1>
+    <div id=small>
+     <h6>% Meeting or Exceding
+     expectations (cumulative)
+     </h6>
+     <img src="assets/images/bar-graph.png" alt="bar-graph">
+    </div>
+    
+  </div>
+    
+  </section>
+
+  <section class="boxes" >
+  <div id="satisfaction">
+  <h1 id="teacher">Teacher Rating</h1>
+  <div id=small>
+    <h6> ovetaral teacher rating
+    (cumulative)
+  </h6>
+  <img src="assets/images/bar-graph.png" alt="bar-graph">
+  </div>
+    
+  </div>
+    
+  </section>
+
+  <section class="boxes" >
+  <div id="satisfaction">
+  <h1>Jedi Master Rating</h1>
+  <div id=small>
+    <h6> overall Jedi Rating
+     (cumulative)<i class="fa fa-sort-desc" aria-hidden="true"></i>
+  </h6>
+  <img src="assets/images/bar-graph.png" alt="bar-graph">
+  </div>
+    
+  </div>
+    
+  </section>
 <!--<div class="alumnas" id="scl2016-2"></div>-->
 <!--<div id="scl2016-2"></div>-->
 

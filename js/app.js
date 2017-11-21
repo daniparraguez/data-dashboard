@@ -7,14 +7,15 @@
 //console.log(data);
 
 //SANTIAGO- SCL
-//Por generación
+//Enrollment por generación
+
 var SclStudentsGen20162=data.SCL["2016-2"].students;
 var SclStudentsGen20172=data.SCL["2017-2"].students;
 var SclStudentsGen20171=data.SCL["2017-1"].students;
 
 (function (){
-   var container = document.getElementById('sclgen20162');
-       var total = SclStudentsGen20162.length;
+   var container = document.getElementById('sclgen20171');
+       var total = SclStudentsGen20172.length;
        var div = document.createElement('div');
          var nodoParrafo = document.createTextNode(total);
              div.appendChild(nodoParrafo);
@@ -22,9 +23,37 @@ var SclStudentsGen20171=data.SCL["2017-1"].students;
 
 }());
 
+//Dessertion por generación
+
+(function(){
+var dessertion= SclStudentsGen20172.filter((student)=>{return student.active==false})
+var totalDessertion= dessertion.length;
+var container = document.getElementById('sclgen20172dessert');
+var div = document.createElement('div');
+   var nodoParrafo = document.createTextNode(totalDessertion);
+   div.appendChild(nodoParrafo);
+   container.appendChild(div);
+
+}());
+
+//-Supera TECH > 70% por sprint
+
+(function(){
+var dessertion= SclStudentsGen20162.filter((student)=>{return student.active==false})
+var totalDessertion= dessertion.length;
+var container = document.getElementById('sclgen20162dessert');
+var div = document.createElement('div');
+   var nodoParrafo = document.createTextNode(totalDessertion);
+   div.appendChild(nodoParrafo);
+   container.appendChild(div);
+
+}());
+
+
+
 (function (){
-   var container = document.getElementById('sclgen20172');
-       var total = SclStudentsGen20172.length;
+   var container = document.getElementById('sclgen20162');
+       var total = SclStudentsGen20162.length;
        var div = document.createElement('div');
          var nodoParrafo = document.createTextNode(total);
              div.appendChild(nodoParrafo);
@@ -96,3 +125,42 @@ var CdmxStudentsGen20171=data.CDMX["2017-1"].students;
              container.appendChild(div);
 
 }());
+
+//Promedio de los profesores generación 2017-2
+
+   var container = document.getElementById('teacher');
+   var sumaProf = 0;
+   var promProf = 0;
+       for(var i = 0; i < data.SCL['2017-2'].ratings.length; i++){
+       sumaProf += data.SCL['2017-2'].ratings[i].teacher;
+       promProf = sumaProf / data.SCL['2017-2'].ratings.length;
+       }
+
+       //console.log(sumaProf+' suma y promedio '+promProf);
+
+       var promedioProfes =  promProf;
+
+       var promedio = document.createElement('h1');
+       var nodoPromedio = document.createTextNode(promedioProfes);
+           promedio.appendChild(nodoPromedio);
+           teacher.appendChild(promedio);
+
+
+   //Promedio de los jedi master generación 2017-2
+
+   var container = document.getElementById('jedi');
+   var sumaJedi = 0;
+   var promJedi = 0;
+       for(var i = 0; i < data.SCL['2017-2'].ratings.length; i++){
+       sumaJedi += data.SCL['2017-2'].ratings[i].jedi;
+       promJedi = sumaJedi / data.SCL['2017-2'].ratings.length;
+       }
+
+       //console.log(sumaJedi+' suma y promedio '+promJedi);
+
+       var promedioJedis = promJedi;
+
+       var promedio = document.createElement('h1');
+       var nodoPromedio = document.createTextNode(promedioJedis);
+           promedio.appendChild(nodoPromedio);
+           jedi.appendChild(promedio);
