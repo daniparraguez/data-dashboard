@@ -137,7 +137,15 @@ header nav a:hover {
 	height: 20em;
 	padding-bottom: 3em;
 	background-color: #E6E6E6;
-    display: inline-block;
+	position: relative;
+	right: 8em;
+    
+ }
+
+ .aqp{
+ 	position: relative;
+	left: 25em;
+	bottom: 24em;
  }
 
 h1 {
@@ -149,26 +157,75 @@ h1 {
     background-color: #Fff;
     width: 130px;
     height: 70px;
-    margin-left: 5px;
+    margin-left: 30px;
     padding-left: 23px;
-    display: inline-block;
+    display: inline-flex;
     
 }
 
-.boxes, .satisfaction{
+.boxs, #satisfaction{
  	width: 25em;
 	height: 20em;
 	padding-bottom: 3em;
 	background-color: #E6E6E6;
+
    
+ }
+
+
+#satisfaction{
+ 	position: relative;
+ 	bottom:48em;
+ 	right: 8em;
+ }
+ 
+ #jedi{
+ 	width: 25em;
+	height: 20em;
+	padding-bottom: 3em;
+	background-color: #E6E6E6;
+ 	position: relative;
+ 	bottom: 1155px;	
+ 	left: 401px;
  }
 
 #small {
     background-color: #Fff;
     width: 130px;
     height: 70px;
-    margin-left: 5px;
+    margin-left: 30px;
+
     padding-left: 23px;
     display: inline-block;
     
+}
+.imgEn{
+	position: relative;
+	top: 2em;
+	left: 2em;
+}
+.overbtn{
+
+    margin-top: 10px;
+	color:#252932;
+	text-decoration:none;
+	padding:10px 20px;
+	line-height:normal;
+	font-size:20px;
+	font-weight:bolder;
+	-webkit-transition:all 500ms ease;
+	-o-transition:all 500ms ease;
+	transition:all 500ms ease;
+	position: relative;
+	top:180px;
+	right: 125px;
+	background-color: #919191;
+}
+
+.overbtn:hover{
+
+    background-color: #ffc107;
+    border-color: #000;
+    color: #FFFFFF;
+
 }
